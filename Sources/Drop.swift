@@ -46,6 +46,8 @@ public struct Drop: ExpressibleByStringLiteral {
     subtitle: String? = nil,
     subtitleNumberOfLines: Int = 1,
     icon: UIImage? = nil,
+    tintColor: UIColor? = nil,
+    backgroundColor: UIColor? = .secondarySystemBackground,
     action: Action? = nil,
     position: Position = .top,
     duration: Duration = .recommended,
@@ -58,6 +60,8 @@ public struct Drop: ExpressibleByStringLiteral {
     }
     self.subtitleNumberOfLines = subtitleNumberOfLines
     self.icon = icon
+    self.tintColor = tintColor
+    self.backgroundColor = backgroundColor
     self.action = action
     self.position = position
     self.duration = duration
@@ -90,7 +94,11 @@ public struct Drop: ExpressibleByStringLiteral {
 
   /// Icon.
   public var icon: UIImage?
+  public var tintColor: UIColor?
 
+  /// Background.
+  public var backgroundColor: UIColor?
+  
   /// Action.
   public var action: Action?
 
@@ -146,13 +154,15 @@ public extension Drop {
     /// - Parameters:
     ///   - icon: Optional icon image.
     ///   - handler: Handler to be called when the drop is tapped.
-    public init(icon: UIImage? = nil, handler: @escaping () -> Void) {
+    public init(icon: UIImage? = nil, tintColor: UIColor? = nil, handler: @escaping () -> Void) {
       self.icon = icon
+      self.tintColor = tintColor
       self.handler = handler
     }
 
     /// Icon.
     public var icon: UIImage?
+    public var tintColor: UIColor?
 
     /// Handler.
     public var handler: () -> Void

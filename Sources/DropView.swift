@@ -29,7 +29,7 @@ internal final class DropView: UIView {
     self.drop = drop
     super.init(frame: .zero)
 
-    backgroundColor = .secondarySystemBackground
+    backgroundColor = drop.backgroundColor
 
     addSubview(stackView)
 
@@ -104,14 +104,17 @@ internal final class DropView: UIView {
     clipsToBounds = true
 
     titleLabel.text = drop.title
+    titleLabel.textColor = drop.backgroundColor?.contrastColor()
     titleLabel.numberOfLines = drop.titleNumberOfLines
 
     subtitleLabel.text = drop.subtitle
+    subtitleLabel.textColor = drop.backgroundColor?.contrastColor()
     subtitleLabel.numberOfLines = drop.subtitleNumberOfLines
     subtitleLabel.isHidden = drop.subtitle == nil
 
     imageView.image = drop.icon
     imageView.isHidden = drop.icon == nil
+    imageView.tintColor = drop.tintColor
 
     button.setImage(drop.action?.icon, for: .normal)
     button.isHidden = drop.action?.icon == nil

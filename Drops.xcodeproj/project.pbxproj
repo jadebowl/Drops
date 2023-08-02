@@ -40,6 +40,7 @@
 		078898D02644A6CC009F04A5 /* WindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0785D37D26416DDF004D6171 /* WindowViewController.swift */; };
 		07CEDD3B2645EEC0004EE4CD /* DropsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CEDD3A2645EEBF004EE4CD /* DropsTests.swift */; };
 		07D8147726361DB7003F51DB /* Drops.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D8146D26361DB7003F51DB /* Drops.framework */; };
+		0EA70F002A7A62DA008E863C /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA70EFF2A7A62DA008E863C /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +131,7 @@
 		07D8149D26361DE8003F51DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../UIKitExample/ViewController.swift; sourceTree = "<group>"; };
 		07EB028828F08EA900ABC5B3 /* SwiftUIExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUIExample.entitlements; sourceTree = "<group>"; };
 		07EB028928F08ECE00ABC5B3 /* UIKitExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UIKitExample.entitlements; sourceTree = "<group>"; };
+		0EA70EFF2A7A62DA008E863C /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +239,7 @@
 				0785D38C2641F487004D6171 /* Presenter.swift */,
 				0785D37B26416DB3004D6171 /* Weak.swift */,
 				0785D37D26416DDF004D6171 /* WindowViewController.swift */,
+				0EA70EFF2A7A62DA008E863C /* UIColor.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -497,6 +500,7 @@
 				0785D38526416EF3004D6171 /* PassthroughView.swift in Sources */,
 				0785D38D2641F487004D6171 /* Presenter.swift in Sources */,
 				0785D38926416EF3004D6171 /* DropView.swift in Sources */,
+				0EA70F002A7A62DA008E863C /* UIColor.swift in Sources */,
 				0785D38726416EF3004D6171 /* Drop.swift in Sources */,
 				0785D38826416EF3004D6171 /* Animator.swift in Sources */,
 				0785D38626416EF3004D6171 /* AnimationContext.swift in Sources */,
@@ -560,7 +564,7 @@
 				CODE_SIGN_ENTITLEMENTS = UIKitExample/UIKitExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = C3VKVFB3SA;
+				DEVELOPMENT_TEAM = 788S89FDTP;
 				INFOPLIST_FILE = UIKitExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -585,7 +589,7 @@
 				CODE_SIGN_ENTITLEMENTS = UIKitExample/UIKitExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = C3VKVFB3SA;
+				DEVELOPMENT_TEAM = 788S89FDTP;
 				INFOPLIST_FILE = UIKitExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -610,7 +614,7 @@
 				CODE_SIGN_ENTITLEMENTS = SwiftUIExample/SwiftUIExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = C3VKVFB3SA;
+				DEVELOPMENT_TEAM = 788S89FDTP;
 				ENABLE_PREVIEWS = NO;
 				INFOPLIST_FILE = SwiftUIExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -636,7 +640,7 @@
 				CODE_SIGN_ENTITLEMENTS = SwiftUIExample/SwiftUIExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = C3VKVFB3SA;
+				DEVELOPMENT_TEAM = 788S89FDTP;
 				ENABLE_PREVIEWS = NO;
 				INFOPLIST_FILE = SwiftUIExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -782,7 +786,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = C3VKVFB3SA;
+				DEVELOPMENT_TEAM = 788S89FDTP;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -813,7 +817,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = C3VKVFB3SA;
+				DEVELOPMENT_TEAM = 788S89FDTP;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -842,7 +846,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C3VKVFB3SA;
+				DEVELOPMENT_TEAM = 788S89FDTP;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -861,7 +865,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C3VKVFB3SA;
+				DEVELOPMENT_TEAM = 788S89FDTP;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
